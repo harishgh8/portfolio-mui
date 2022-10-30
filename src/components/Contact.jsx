@@ -1,12 +1,16 @@
 import { Button, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
-import { Responsive } from "./Responsive";
+
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 
 const Contact = () => {
   return (
-    <Responsive>
+    <Box
+      sx={{
+        padding: 4,
+      }}
+    >
       <Box>
         <Typography
           variant="h6"
@@ -43,7 +47,7 @@ const Contact = () => {
           send email
         </Button>
       </Box>
-    </Responsive>
+    </Box>
   );
 };
 

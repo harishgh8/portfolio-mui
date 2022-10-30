@@ -13,15 +13,15 @@ function App() {
     <Container maxWidth="md">
       <Box sx={{ display: "flex", flexDirection: "column" }}>
         <Hero />
-        <Divider variant="center" sx={{ paddingTop: 3 }} />
+        <Divider variant="center" />
         <About />
         <Divider variant="center" />
         <Skills />
-        <Divider variant="center" sx={{ paddingTop: 3 }} />
+        <Divider variant="center" />
         <Contact />
-        <Divider variant="center" sx={{ paddingTop: 3 }} />
+        <Divider variant="center" />
         <FindMore />
-        <Divider variant="center" sx={{ paddingTop: 3 }} />
+        <Divider variant="center" />
       </Box>
     </Container>
   );

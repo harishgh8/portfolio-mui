@@ -20,7 +20,11 @@ export default function Skills() {
   ];
   const backEndSkills = ["Docker", "API development", "Analytics"];
   return (
-    <Box>
+    <Box
+      sx={{
+        padding: 4,
+      }}
+    >
       <Typography
         variant="h6"
         sx={{

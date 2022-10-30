@@ -11,16 +11,19 @@ const About = () => {
       sx={{
         display: "flex",
         gap: 10,
-        marginTop: 4,
-        marginBottom: 4,
+        margin: 4,
       }}
     >
-      <Box>
+      <Box
+        sx={{
+          maxWidth: "450px",
+        }}
+      >
         <Typography
           variant="h6"
           sx={{
             paddingBottom: 3,
-            paddingTop: 3,
+            paddingTop: 1,
             color: "#484848	",
             display: "flex",
             alignItems: "center",

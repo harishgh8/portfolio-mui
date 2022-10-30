@@ -1,12 +1,15 @@
 import { Button, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
-import { Responsive } from "./Responsive";
 import PersonSearchOutlinedIcon from "@mui/icons-material/PersonSearchOutlined";
 
 const FindMore = () => {
   return (
-    <Responsive>
+    <Box
+      sx={{
+        padding: 4,
+      }}
+    >
       <Box>
         <Typography
           variant="h6"
@@ -46,7 +49,7 @@ const FindMore = () => {
           GitHub
         </Button>
       </Box>
-    </Responsive>
+    </Box>
   );
 };
 
