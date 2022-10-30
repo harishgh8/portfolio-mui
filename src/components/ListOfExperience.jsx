@@ -6,15 +6,23 @@ import ListItemText from "@mui/material/ListItemText";
 import ListItemAvatar from "@mui/material/ListItemAvatar";
 import Avatar from "@mui/material/Avatar";
 import Typography from "@mui/material/Typography";
-import { Responsive } from "./Responsive";
+import BadgeOutlinedIcon from "@mui/icons-material/BadgeOutlined";
 
 export default function ListOfExperience() {
   return (
     <>
       <List sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}>
         <ListItem>
-          <Typography variant="h6" sx={{ paddingTop: 1 }}>
-            Experience
+          <Typography
+            variant="h6"
+            sx={{
+              paddingTop: 1,
+              color: "#484848	",
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
+            <BadgeOutlinedIcon /> &nbsp;Experience
           </Typography>
         </ListItem>
 

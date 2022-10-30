@@ -2,6 +2,7 @@ import { Button, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import { Responsive } from "./Responsive";
+import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 
 const Contact = () => {
   return (
@@ -12,9 +13,12 @@ const Contact = () => {
           sx={{
             paddingBottom: 3,
             paddingTop: 3,
+            color: "#484848	",
+            display: "flex",
+            alignItems: "center",
           }}
         >
-          Contact
+          <EmailOutlinedIcon /> &nbsp;Contact
         </Typography>
       </Box>
       <Box>
@@ -36,7 +40,7 @@ const Contact = () => {
             (window.location.href = "mailto:harish.gpa@gmail.com?")
           }
         >
-          send mail
+          send email
         </Button>
       </Box>
     </Responsive>

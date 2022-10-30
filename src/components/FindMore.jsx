@@ -2,6 +2,7 @@ import { Button, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import { Responsive } from "./Responsive";
+import PersonSearchOutlinedIcon from "@mui/icons-material/PersonSearchOutlined";
 
 const FindMore = () => {
   return (
@@ -12,9 +13,12 @@ const FindMore = () => {
           sx={{
             paddingBottom: 3,
             paddingTop: 3,
+            color: "#484848	",
+            display: "flex",
+            alignItems: "center",
           }}
         >
-          Find more about me
+          <PersonSearchOutlinedIcon /> &nbsp; Find more about me
         </Typography>
       </Box>
       <Box

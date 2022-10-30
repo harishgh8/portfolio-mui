@@ -1,4 +1,4 @@
-import { Container, Divider, Grid } from "@mui/material";
+import { Container, Divider } from "@mui/material";
 import { Box } from "@mui/system";
 import About from "./components/About";
 import Contact from "./components/Contact";
@@ -13,7 +13,7 @@ function App() {
     <Container maxWidth="md">
       <Box sx={{ display: "flex", flexDirection: "column" }}>
         <Hero />
-        <Divider variant="center" />
+        <Divider variant="center" sx={{ paddingTop: 3 }} />
         <About />
         <Divider variant="center" />
         <Skills />

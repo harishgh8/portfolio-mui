@@ -1,7 +1,7 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Avatar from "@mui/material/Avatar";
-import { Button, Typography } from "@mui/material";
+import { Button, Link, Typography } from "@mui/material";
 import { Responsive } from "./Responsive";
 
 export default function Hero() {
@@ -31,7 +31,7 @@ export default function Hero() {
       >
         <Typography
           variant="h4"
-          sx={{ color: "black", paddingTop: 2, textAlign: "center" }}
+          sx={{ color: "#484848	", paddingTop: 2, textAlign: "center" }}
         >
           Hi, I'm Harish. A Software Engineer.
         </Typography>
@@ -41,16 +41,17 @@ export default function Hero() {
         </Typography>
 
         <br />
-        <Box sx={{ paddingTop: 4 }}>
-          <Button
-            variant="outline"
+        <Box sx={{ paddingTop: 3 }}>
+          <Link
+            component="button"
+            variant="body2"
             color="inherit"
-            onClick={() =>
-              (window.location.href = "mailto:harish.gpa@gmail.com?")
-            }
+            onClick={() => {
+              window.location.href = "mailto:harish.gpa@gmail.com?";
+            }}
           >
-            Contact
-          </Button>
+            Contact me
+          </Link>
         </Box>
       </Box>
     </Responsive>
