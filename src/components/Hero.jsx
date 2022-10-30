@@ -1,22 +1,22 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Avatar from "@mui/material/Avatar";
-import { Typography } from "@mui/material";
+import { Button, Typography } from "@mui/material";
+import { Responsive } from "./Responsive";
 
 export default function Hero() {
   return (
-    <Box
+    <Responsive
       sx={{
         display: "flex",
         gap: 4,
-        marginTop: 4,
-        marginBottom: 4,
+        marginTop: 6,
       }}
     >
-      <Box sx={{ display: "flex", alignItems: "left" }}>
+      <Box>
         <Avatar
           alt="profile pic"
-          src={require("../static/images/profpic.png")}
+          src={require("../static/images/prof.png")}
           sx={{ width: 200, height: 200 }}
         />
       </Box>
@@ -25,20 +25,34 @@ export default function Hero() {
         sx={{
           display: "flex",
           flexDirection: "column",
-          justifyItems: "left",
-          paddingTop: 2,
+          alignItems: "center",
+          margin: 2,
         }}
       >
-        <Typography variant="h4" sx={{ color: "black" }}>
-          Hi, I'm Harish. <br />A Software Engineer.
+        <Typography
+          variant="h4"
+          sx={{ color: "black", paddingTop: 2, textAlign: "center" }}
+        >
+          Hi, I'm Harish. A Software Engineer.
         </Typography>
-        <Typography variant="p" sx={{ lineHeight: "150%" }}>
-          Web Developer specialized in building web
-          <p>applications with JavaScript technologies.</p>
+        <Typography sx={{ textAlign: "center" }}>
+          Web Developer specialized in building web applications with JavaScript
+          technologies.
         </Typography>
+
         <br />
-        <Typography variant="p">Contact </Typography>
+        <Box sx={{ paddingTop: 4 }}>
+          <Button
+            variant="outline"
+            color="inherit"
+            onClick={() =>
+              (window.location.href = "mailto:harish.gpa@gmail.com?")
+            }
+          >
+            Contact
+          </Button>
+        </Box>
       </Box>
-    </Box>
+    </Responsive>
   );
 }

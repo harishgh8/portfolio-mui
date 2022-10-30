@@ -6,14 +6,16 @@ import ListItemText from "@mui/material/ListItemText";
 import ListItemAvatar from "@mui/material/ListItemAvatar";
 import Avatar from "@mui/material/Avatar";
 import Typography from "@mui/material/Typography";
-import { Box } from "@mui/material";
+import { Responsive } from "./Responsive";
 
 export default function ListOfExperience() {
   return (
     <>
       <List sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}>
-        <ListItem alignItems="flex-start">
-          <Typography variant="h6">Experience</Typography>
+        <ListItem>
+          <Typography variant="h6" sx={{ paddingTop: 1 }}>
+            Experience
+          </Typography>
         </ListItem>
 
         <ListItem alignItems="flex-start">
