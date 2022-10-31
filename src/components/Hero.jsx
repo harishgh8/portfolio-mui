@@ -42,8 +42,7 @@ export default function Hero() {
           Hi, I'm Harish. <br />A Software Developer.
         </Typography>
         <Typography sx={{}}>
-          Web Developer specialized in building web applications with JavaScript
-          technologies.
+          Specialized in building web applications with JavaScript technologies.
         </Typography>
 
         <br />
