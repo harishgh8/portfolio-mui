@@ -22,12 +22,12 @@ const Contact = () => {
             alignItems: "center",
           }}
         >
-          <EmailOutlinedIcon /> &nbsp;Contact
+          <EmailOutlinedIcon /> &nbsp;Contact me
         </Typography>
       </Box>
       <Box>
         <Typography sx={{ fontSize: 14 }}>
-          Want to get in touch, please contact me, Thanks!
+          Want to get in touch! please contact me, Thanks.
         </Typography>
       </Box>
       <Box

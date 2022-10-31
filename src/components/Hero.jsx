@@ -46,7 +46,13 @@ export default function Hero() {
         </Typography>
 
         <br />
-        <Box>
+        <Box
+          sx={{
+            display: "flex",
+          }}
+        >
+          {" "}
+          <EmailOutlinedIcon sx={{ width: "auto", height: 19 }} /> &nbsp;
           <Link
             component="button"
             variant="body2"
@@ -59,7 +65,6 @@ export default function Hero() {
               justifyItems: "center",
             }}
           >
-            <EmailOutlinedIcon sx={{ width: "auto", height: 19 }} />
             Contact me
           </Link>
         </Box>
