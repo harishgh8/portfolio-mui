@@ -1,4 +1,4 @@
-import { Button, Typography } from "@mui/material";
+import { Avatar, Button, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import PersonSearchOutlinedIcon from "@mui/icons-material/PersonSearchOutlined";
@@ -30,7 +30,14 @@ const FindMore = () => {
         }}
       >
         <Button
-          variant="outlined"
+          startIcon={
+            <Avatar
+              sx={{ width: "20px", height: "auto" }}
+              variant="square"
+              src={require("../static/images/linkedin.png")}
+            />
+          }
+          variant="text"
           component="button"
           size="small"
           color="inherit"
@@ -41,7 +48,13 @@ const FindMore = () => {
           LinkedIn
         </Button>
         <Button
-          variant="outlined"
+          startIcon={
+            <Avatar
+              sx={{ width: "20px", height: "auto" }}
+              src={require("../static/images/github.png")}
+            />
+          }
+          variant="text"
           size="small"
           color="inherit"
           onClick={() => window.open("https://github.com/harishgh8")}

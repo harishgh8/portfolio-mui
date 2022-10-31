@@ -39,7 +39,7 @@ export default function Hero() {
         }}
       >
         <Typography variant="h4" sx={{ color: "#484848	", paddingTop: 2 }}>
-          Hi, I'm Harish. A Software Engineer.
+          Hi, I'm Harish. <br />A Software Developer.
         </Typography>
         <Typography sx={{}}>
           Web Developer specialized in building web applications with JavaScript
