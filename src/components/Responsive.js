@@ -8,3 +8,10 @@ export const Responsive = styled("div")(({ theme }) => ({
     overflowWrap: "break-word",
   },
 }));
+
+export const ResponsiveBox = styled("div")(({ theme }) => ({
+  [theme.breakpoints.down("sm")]: {
+    alignItems: "center",
+    textAlign: "center",
+  },
+}));

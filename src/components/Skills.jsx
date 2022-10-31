@@ -48,8 +48,13 @@ export default function Skills() {
             <CodeIcon /> &nbsp; Front End
           </CardContent>
           <Divider variant="center" sx={{ margin: 1 }} />
-          {frontEndSkills.map((skill) => (
-            <Chip variant="outlined" label={skill} sx={{ margin: 0.5 }} />
+          {frontEndSkills.map((skill, i) => (
+            <Chip
+              variant="outlined"
+              label={skill}
+              key={i}
+              sx={{ margin: 0.5 }}
+            />
           ))}
         </Card>
         <br />
@@ -64,8 +69,13 @@ export default function Skills() {
             &nbsp; Back End
           </CardContent>
           <Divider variant="center" sx={{ margin: 1 }} />
-          {backEndSkills.map((skill) => (
-            <Chip variant="outlined" label={skill} sx={{ margin: 0.5 }} />
+          {backEndSkills.map((skill, i) => (
+            <Chip
+              variant="outlined"
+              key={i}
+              label={skill}
+              sx={{ margin: 0.5 }}
+            />
           ))}
         </Card>
       </Responsive>

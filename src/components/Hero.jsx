@@ -2,7 +2,7 @@ import React from "react";
 import Box from "@mui/material/Box";
 import Avatar from "@mui/material/Avatar";
 import { Link, Typography } from "@mui/material";
-import { Responsive } from "./Responsive";
+import { Responsive, ResponsiveBox } from "./Responsive";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 
 export default function Hero() {
@@ -29,7 +29,7 @@ export default function Hero() {
         />
       </Box>
 
-      <Box
+      <ResponsiveBox
         sx={{
           display: "flex",
           flexDirection: "column",
@@ -64,7 +64,7 @@ export default function Hero() {
             Contact me
           </Link>
         </Box>
-      </Box>
+      </ResponsiveBox>
     </Responsive>
   );
 }
