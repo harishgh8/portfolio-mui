@@ -2,7 +2,7 @@ import React from "react";
 import Typography from "@mui/material/Typography";
 import ListOfExperience from "./ListOfExperience";
 import { Responsive } from "./Responsive";
-import { Box } from "@mui/material";
+import { Box, Divider } from "@mui/material";
 import DescriptionOutlinedIcon from "@mui/icons-material/DescriptionOutlined";
 
 const About = () => {
@@ -10,15 +10,11 @@ const About = () => {
     <Responsive
       sx={{
         display: "flex",
-        gap: 10,
+        justifyContent: "space-between",
         margin: 4,
       }}
     >
-      <Box
-        sx={{
-          maxWidth: "450px",
-        }}
-      >
+      <Box>
         <Typography
           variant="h6"
           sx={{
@@ -48,6 +44,11 @@ const About = () => {
           versioning, code quality, release planning and CI/CD.
         </Typography>
       </Box>
+      {window.innerWidth < 600 ? (
+        <Divider sx={{ paddingTop: 2, paddingBottom: 2 }} />
+      ) : (
+        ""
+      )}
       <ListOfExperience />
     </Responsive>
   );

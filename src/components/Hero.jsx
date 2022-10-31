@@ -10,8 +10,8 @@ export default function Hero() {
     <Responsive
       sx={{
         display: "flex",
-        gap: 2,
-        marginTop: 6,
+        margin: 4,
+        gap: 5,
       }}
     >
       <Box
@@ -19,7 +19,7 @@ export default function Hero() {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          margin: 4,
+          padding: 1,
         }}
       >
         <Avatar
@@ -33,12 +33,12 @@ export default function Hero() {
         sx={{
           display: "flex",
           flexDirection: "column",
-
+          justifyContent: "center",
           textAlign: "left",
-          margin: 4,
+          padding: 1,
         }}
       >
-        <Typography variant="h4" sx={{ color: "#484848	", paddingTop: 2 }}>
+        <Typography variant="h4" sx={{ color: "#484848" }}>
           Hi, I'm Harish. <br />A Software Developer.
         </Typography>
         <Typography sx={{}}>

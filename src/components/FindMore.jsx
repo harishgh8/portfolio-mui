@@ -15,7 +15,7 @@ const FindMore = () => {
           variant="h6"
           sx={{
             paddingBottom: 3,
-            paddingTop: 3,
+
             color: "#484848	",
             display: "flex",
             alignItems: "center",
