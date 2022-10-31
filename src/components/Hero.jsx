@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import Avatar from "@mui/material/Avatar";
 import { Link, Typography } from "@mui/material";
 import { Responsive } from "./Responsive";
+import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 
 export default function Hero() {
   return (
@@ -54,7 +55,12 @@ export default function Hero() {
             onClick={() => {
               window.location.href = "mailto:harish.gpa@gmail.com?";
             }}
+            sx={{
+              display: "flex",
+              justifyItems: "center",
+            }}
           >
+            <EmailOutlinedIcon sx={{ width: "auto", height: 19 }} />
             Contact me
           </Link>
         </Box>

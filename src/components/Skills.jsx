@@ -45,7 +45,7 @@ export default function Skills() {
               color: "#505050	",
             }}
           >
-            <CodeIcon /> Front End
+            <CodeIcon /> &nbsp; Front End
           </CardContent>
           <Divider variant="center" sx={{ margin: 1 }} />
           {frontEndSkills.map((skill) => (
@@ -60,7 +60,8 @@ export default function Skills() {
               display: "flex",
             }}
           >
-            <IntegrationInstructionsIcon /> Back End
+            <IntegrationInstructionsIcon />
+            &nbsp; Back End
           </CardContent>
           <Divider variant="center" sx={{ margin: 1 }} />
           {backEndSkills.map((skill) => (
