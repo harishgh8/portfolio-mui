@@ -34,7 +34,7 @@ const FindMore = () => {
             <Avatar
               sx={{ width: "20px", height: "auto" }}
               variant="square"
-              src={require("../static/images/linkedin.png")}
+              src={require("../static/images/linkedin.webp")}
             />
           }
           variant="text"
@@ -51,7 +51,7 @@ const FindMore = () => {
           startIcon={
             <Avatar
               sx={{ width: "20px", height: "auto" }}
-              src={require("../static/images/github.png")}
+              src={require("../static/images/github.webp")}
             />
           }
           variant="text"

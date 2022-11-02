@@ -39,7 +39,7 @@ export default function ListOfExperience() {
             <ListItemAvatar>
               <Avatar
                 alt="Remy Sharp"
-                src={require("../static/images/hp.png")}
+                src={require("../static/images/hp.webp")}
               />
             </ListItemAvatar>
             <ListItemText
@@ -64,7 +64,7 @@ export default function ListOfExperience() {
             <ListItemAvatar>
               <Avatar
                 alt="Travis Howard"
-                src={require("../static/images/scotia.png")}
+                src={require("../static/images/scotia.webp")}
               />
             </ListItemAvatar>
             <ListItemText
@@ -89,7 +89,7 @@ export default function ListOfExperience() {
             <ListItemAvatar>
               <Avatar
                 alt="Cindy Baker"
-                src={require("../static/images/GE.png")}
+                src={require("../static/images/GE.webp")}
               />
             </ListItemAvatar>
             <ListItemText

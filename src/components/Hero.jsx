@@ -24,7 +24,8 @@ export default function Hero() {
       >
         <Avatar
           alt="profile pic"
-          src={require("../static/images/prof.png")}
+          fetchpriority="high"
+          src={require("../static/images/prof.webp")}
           sx={{ width: 200, height: 200 }}
         />
       </Box>
