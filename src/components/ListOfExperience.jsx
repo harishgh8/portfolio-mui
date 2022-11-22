@@ -1,7 +1,7 @@
 import React from "react";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
-import Divider from "@mui/material/Divider";
+
 import ListItemText from "@mui/material/ListItemText";
 import ListItemAvatar from "@mui/material/ListItemAvatar";
 import Avatar from "@mui/material/Avatar";
@@ -9,6 +9,32 @@ import Typography from "@mui/material/Typography";
 import BadgeOutlinedIcon from "@mui/icons-material/BadgeOutlined";
 import { Box } from "@mui/material";
 
+const companyList = [
+  {
+    role: "Software Enfineer III",
+    name: "Telestream",
+    year: "2022-",
+    logo: "../static/images/telestream.webp",
+  },
+  {
+    role: "Front End Developer",
+    name: "HP Inc.",
+    year: "2022",
+    logo: "../static/images/hp.webp",
+  },
+  {
+    role: "Software Developer",
+    name: "Scotiabank",
+    year: "2020-2022",
+    logo: "../static/images/scotia.webp",
+  },
+  {
+    role: "Software Developer",
+    name: "GE India",
+    year: "2017-2020",
+    logo: "../static/images/GE.webp",
+  },
+];
 export default function ListOfExperience() {
   return (
     <Box
@@ -33,84 +59,36 @@ export default function ListOfExperience() {
         </Typography>
       </Box>
       <Box>
-        <List
-          sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}
-        >
-          <ListItem alignItems="flex-start">
-            <ListItemAvatar>
-              <Avatar
-                alt="Remy Sharp"
-                src={require("../static/images/hp.webp")}
+        {companyList.map((company) => (
+          <List
+            sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}
+            key={company.year}
+          >
+            <ListItem alignItems="flex-start">
+              <ListItemAvatar>
+                <Avatar alt={company.name} src={company.logo} />
+              </ListItemAvatar>
+              <ListItemText
+                primary="Front End Developer"
+                secondary={
+                  <React.Fragment>
+                    <Typography
+                      sx={{ display: "inline" }}
+                      component="span"
+                      variant="body2"
+                      color="text.primary"
+                    >
+                      {company.name}
+                    </Typography>
+                    <Typography style={{ fontSize: 12 }}>
+                      {company.year}-
+                    </Typography>
+                  </React.Fragment>
+                }
               />
-            </ListItemAvatar>
-            <ListItemText
-              primary="Front End Developer"
-              secondary={
-                <React.Fragment>
-                  <Typography
-                    sx={{ display: "inline" }}
-                    component="span"
-                    variant="body2"
-                    color="text.primary"
-                  >
-                    HP Inc.
-                  </Typography>
-                  <Typography style={{ fontSize: 12 }}>2022-</Typography>
-                </React.Fragment>
-              }
-            />
-          </ListItem>
-          <Divider variant="inset" component="li" />
-          <ListItem alignItems="flex-start">
-            <ListItemAvatar>
-              <Avatar
-                alt="Travis Howard"
-                src={require("../static/images/scotia.webp")}
-              />
-            </ListItemAvatar>
-            <ListItemText
-              primary="Software Developer"
-              secondary={
-                <React.Fragment>
-                  <Typography
-                    sx={{ display: "inline" }}
-                    component="span"
-                    variant="body2"
-                    color="text.primary"
-                  >
-                    Scotiabank
-                  </Typography>
-                  <Typography style={{ fontSize: 12 }}>2020-2022</Typography>
-                </React.Fragment>
-              }
-            />
-          </ListItem>
-          <Divider variant="inset" component="li" />
-          <ListItem alignItems="flex-start">
-            <ListItemAvatar>
-              <Avatar
-                alt="Cindy Baker"
-                src={require("../static/images/GE.webp")}
-              />
-            </ListItemAvatar>
-            <ListItemText
-              primary="Software Developer"
-              secondary={
-                <React.Fragment>
-                  <Typography
-                    sx={{ display: "inline" }}
-                    component="span"
-                    variant="body2"
-                    color="text.primary"
-                  >
-                    GE, India
-                  </Typography>
-                  <Typography style={{ fontSize: 12 }}>2017-2020</Typography>
-                </React.Fragment>
-              }
-            />
-          </ListItem>
-        </List>
+            </ListItem>
+          </List>
+        ))}
       </Box>
     </Box>
   );
