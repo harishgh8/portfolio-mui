@@ -21,7 +21,8 @@ const FindMore = () => {
             alignItems: "center",
           }}
         >
-          <PersonSearchOutlinedIcon /> &nbsp; Find more about me
+          <PersonSearchOutlinedIcon />
+          Find more about me
         </Typography>
       </Box>
       <Box
@@ -39,6 +40,7 @@ const FindMore = () => {
           }
           variant="text"
           component="button"
+          data-testid="linkedin"
           size="small"
           color="inherit"
           onClick={() =>
@@ -55,11 +57,30 @@ const FindMore = () => {
             />
           }
           variant="text"
+          component="button"
+          id="github"
           size="small"
           color="inherit"
           onClick={() => window.open("https://github.com/harishgh8")}
         >
           GitHub
+        </Button>
+        <Button
+          startIcon={
+            <Avatar
+              variant="square"
+              sx={{ width: "20px", height: "auto" }}
+              src={require("../static/images/dev-black.webp")}
+            />
+          }
+          variant="text"
+          component="button"
+          id="dev-to"
+          size="small"
+          color="inherit"
+          onClick={() => window.open("https://dev.to/harishgh8")}
+        >
+          DEV
         </Button>
       </Box>
     </Box>

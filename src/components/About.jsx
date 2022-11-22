@@ -44,7 +44,8 @@ const About = () => {
           versioning, code quality, release planning and CI/CD.
         </Typography>
       </Box>
-      {window.innerWidth < 600 ? (
+
+      {window.innerWidth < 900 ? (
         <Divider sx={{ paddingTop: 2, paddingBottom: 2 }} />
       ) : (
         ""

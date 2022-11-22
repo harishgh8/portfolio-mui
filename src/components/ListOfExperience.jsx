@@ -13,6 +13,7 @@ export default function ListOfExperience() {
   return (
     <Box
       sx={{
+        minWidth: "240px",
         display: "flex",
         flexDirection: "column",
         alignItems: "left",
