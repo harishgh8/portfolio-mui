@@ -4,6 +4,23 @@ import React from "react";
 import PersonSearchOutlinedIcon from "@mui/icons-material/PersonSearchOutlined";
 
 const FindMore = () => {
+  const externalLinks = [
+    {
+      name: "LinkedIn",
+      logoName: "linkedin",
+      url: "https://www.linkedin.com/in/harish-g-83b14a235/",
+    },
+    {
+      name: "GitHub",
+      logoName: "github",
+      url: "https://www.linkedin.com/in/harish-g-83b14a235/",
+    },
+    {
+      name: "DEV",
+      logoName: "dev-black",
+      url: "https://www.linkedin.com/in/harish-g-83b14a235/",
+    },
+  ];
   return (
     <Box
       sx={{
@@ -30,58 +47,25 @@ const FindMore = () => {
           "& button": { m: 1 },
         }}
       >
-        <Button
-          startIcon={
-            <Avatar
-              sx={{ width: "20px", height: "auto" }}
-              variant="square"
-              src={require("../static/images/linkedin.webp")}
-            />
-          }
-          variant="text"
-          component="button"
-          data-testid="linkedin"
-          size="small"
-          color="inherit"
-          onClick={() =>
-            window.open("https://www.linkedin.com/in/harish-g-83b14a235/")
-          }
-        >
-          LinkedIn
-        </Button>
-        <Button
-          startIcon={
-            <Avatar
-              sx={{ width: "20px", height: "auto" }}
-              src={require("../static/images/github.webp")}
-            />
-          }
-          variant="text"
-          component="button"
-          id="github"
-          size="small"
-          color="inherit"
-          onClick={() => window.open("https://github.com/harishgh8")}
-        >
-          GitHub
-        </Button>
-        <Button
-          startIcon={
-            <Avatar
-              variant="square"
-              sx={{ width: "20px", height: "auto" }}
-              src={require("../static/images/dev-black.webp")}
-            />
-          }
-          variant="text"
-          component="button"
-          id="dev-to"
-          size="small"
-          color="inherit"
-          onClick={() => window.open("https://dev.to/harishgh8")}
-        >
-          DEV
-        </Button>
+        {externalLinks.map((external) => (
+          <Button
+            key={external.name}
+            startIcon={
+              <Avatar
+                sx={{ width: "20px", height: "auto" }}
+                variant="square"
+                src={require("../static/images/" + external.logoName + ".webp")}
+              />
+            }
+            variant="text"
+            component="button"
+            size="small"
+            color="inherit"
+            onClick={() => window.open(external.url)}
+          >
+            {external.name}
+          </Button>
+        ))}
       </Box>
     </Box>
   );
