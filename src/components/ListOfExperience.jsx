@@ -9,30 +9,30 @@ import Typography from "@mui/material/Typography";
 import BadgeOutlinedIcon from "@mui/icons-material/BadgeOutlined";
 import { Box } from "@mui/material";
 
-const companyList = [
+export const companyList = [
   {
-    role: "Software Enfineer III",
+    role: "Software Engineer III",
     name: "Telestream",
     year: "2022-",
-    logo: "../static/images/telestream.webp",
+    logo: "telestream",
   },
   {
     role: "Front End Developer",
     name: "HP Inc.",
     year: "2022",
-    logo: "../static/images/hp.webp",
+    logo: "hp",
   },
   {
     role: "Software Developer",
     name: "Scotiabank",
     year: "2020-2022",
-    logo: "../static/images/scotia.webp",
+    logo: "scotia",
   },
   {
     role: "Software Developer",
     name: "GE India",
     year: "2017-2020",
-    logo: "../static/images/GE.webp",
+    logo: "GE",
   },
 ];
 export default function ListOfExperience() {
@@ -66,10 +66,13 @@ export default function ListOfExperience() {
           >
             <ListItem alignItems="flex-start">
               <ListItemAvatar>
-                <Avatar alt={company.name} src={company.logo} />
+                <Avatar
+                  alt={company.name}
+                  src={require("../static/images/" + company.logo + ".webp")}
+                />
               </ListItemAvatar>
               <ListItemText
-                primary="Front End Developer"
+                primary={company.role}
                 secondary={
                   <React.Fragment>
                     <Typography
@@ -81,7 +84,7 @@ export default function ListOfExperience() {
                       {company.name}
                     </Typography>
                     <Typography style={{ fontSize: 12 }}>
-                      {company.year}-
+                      {company.year}
                     </Typography>
                   </React.Fragment>
                 }
