@@ -10,7 +10,7 @@ export default function Hero() {
     <Responsive
       sx={{
         display: "flex",
-        margin: 4,
+        padding: 2,
         gap: 5,
       }}
     >

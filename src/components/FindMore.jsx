@@ -1,4 +1,4 @@
-import { Avatar, Button, Typography } from "@mui/material";
+import { Avatar, Button, Divider, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import PersonSearchOutlinedIcon from "@mui/icons-material/PersonSearchOutlined";
@@ -31,7 +31,7 @@ const FindMore = () => {
         <Typography
           variant="h6"
           sx={{
-            paddingBottom: 3,
+            paddingBottom: 1,
 
             color: "#484848	",
             display: "flex",
@@ -41,10 +41,12 @@ const FindMore = () => {
           <PersonSearchOutlinedIcon />
           Find more about me
         </Typography>
+        <Divider variant="center" />
       </Box>
       <Box
         sx={{
           "& button": { m: 1 },
+          paddingTop: 2,
         }}
       >
         {externalLinks.map((external) => (

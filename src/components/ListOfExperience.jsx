@@ -7,7 +7,7 @@ import ListItemAvatar from "@mui/material/ListItemAvatar";
 import Avatar from "@mui/material/Avatar";
 import Typography from "@mui/material/Typography";
 import BadgeOutlinedIcon from "@mui/icons-material/BadgeOutlined";
-import { Box } from "@mui/material";
+import { Box, Divider } from "@mui/material";
 
 export const companyList = [
   {
@@ -49,7 +49,8 @@ export default function ListOfExperience() {
         <Typography
           variant="h6"
           sx={{
-            paddingTop: 1,
+            paddingTop: 2,
+            paddingBottom: 1,
             color: "#484848	",
             display: "flex",
             alignItems: "center",
@@ -57,6 +58,7 @@ export default function ListOfExperience() {
         >
           <BadgeOutlinedIcon /> &nbsp;Experience
         </Typography>
+        <Divider variant="center" />
       </Box>
       <Box>
         {companyList.map((company) => (

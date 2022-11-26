@@ -28,7 +28,7 @@ export default function Skills() {
       <Typography
         variant="h6"
         sx={{
-          paddingBottom: 3,
+          paddingBottom: 1,
 
           color: "#484848	",
           display: "flex",
@@ -37,7 +37,8 @@ export default function Skills() {
       >
         <BuildOutlinedIcon /> &nbsp; Skills
       </Typography>
-      <Responsive sx={{ display: "flex", gap: 4 }}>
+      <Divider variant="center" />
+      <Responsive sx={{ display: "flex", gap: 4, paddingTop: 2 }}>
         <Card variant="outlined">
           <CardContent
             sx={{

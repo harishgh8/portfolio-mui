@@ -1,4 +1,4 @@
-import { Button, Typography } from "@mui/material";
+import { Button, Divider, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 
@@ -15,7 +15,7 @@ const Contact = () => {
         <Typography
           variant="h6"
           sx={{
-            paddingBottom: 3,
+            paddingBottom: 1,
 
             color: "#484848	",
             display: "flex",
@@ -24,9 +24,10 @@ const Contact = () => {
         >
           <EmailOutlinedIcon /> &nbsp;Contact me
         </Typography>
+        <Divider variant="center" />
       </Box>
       <Box>
-        <Typography sx={{ fontSize: 14 }}>
+        <Typography sx={{ fontSize: 14, paddingTop: 2 }}>
           Want to get in touch! please contact me, Thanks.
         </Typography>
       </Box>

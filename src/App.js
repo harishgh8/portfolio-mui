@@ -17,15 +17,14 @@ function App() {
     <Container maxWidth="md">
       <Box sx={{ display: "flex", flexDirection: "column" }}>
         <Hero />
-        <Divider variant="center" />
+
         <About />
-        <Divider variant="center" />
+
         <Skills />
-        <Divider variant="center" />
+
         <Contact />
-        <Divider variant="center" />
+
         <FindMore />
-        <Divider variant="center" />
       </Box>
     </Container>
   );

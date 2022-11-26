@@ -18,8 +18,8 @@ const About = () => {
         <Typography
           variant="h6"
           sx={{
-            paddingBottom: 3,
-            paddingTop: 1,
+            paddingBottom: 1,
+            paddingTop: 2,
             color: "#484848	",
             display: "flex",
             alignItems: "center",
@@ -27,7 +27,8 @@ const About = () => {
         >
           <DescriptionOutlinedIcon /> &nbsp; About Me
         </Typography>
-        <Typography sx={{ fontSize: 14 }}>
+        <Divider variant="center" />
+        <Typography sx={{ fontSize: 14, paddingTop: 2 }}>
           As a software engineer I focus on building web applications with
           JavaScript technologies across the whole stack (React / Next.js,
           Node.js, Express & MongoDB) & Firebase.
@@ -45,11 +46,6 @@ const About = () => {
         </Typography>
       </Box>
 
-      {window.innerWidth < 900 ? (
-        <Divider sx={{ paddingTop: 2, paddingBottom: 2 }} />
-      ) : (
-        ""
-      )}
       <ListOfExperience />
     </Responsive>
   );
