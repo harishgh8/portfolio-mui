@@ -13,12 +13,12 @@ const FindMore = () => {
     {
       name: "GitHub",
       logoName: "github",
-      url: "https://www.linkedin.com/in/harish-g-83b14a235/",
+      url: "https://github.com/harishgh8",
     },
     {
       name: "DEV",
       logoName: "dev-black",
-      url: "https://www.linkedin.com/in/harish-g-83b14a235/",
+      url: "https://dev.to/harishgh8",
     },
   ];
   return (
@@ -61,7 +61,7 @@ const FindMore = () => {
             component="button"
             size="small"
             color="inherit"
-            onClick={() => window.open(external.url)}
+            onClick={() => window.open(external.url, "_blank")}
           >
             {external.name}
           </Button>
