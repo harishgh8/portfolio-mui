@@ -24,9 +24,9 @@ export const companyList = [
   },
   {
     role: "Software Developer",
-    name: "Scotiabank",
+    name: "Ford",
     year: "2020-2022",
-    logo: "scotia",
+    logo: "ford",
   },
   {
     role: "Software Developer",
