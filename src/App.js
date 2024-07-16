@@ -1,4 +1,4 @@
-import { Container, Divider } from "@mui/material";
+import { Container } from "@mui/material";
 import { Box } from "@mui/system";
 import About from "./components/About";
 import Contact from "./components/Contact";
